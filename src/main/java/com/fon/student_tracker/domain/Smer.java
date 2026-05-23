@@ -21,4 +21,7 @@ public class Smer {
     @Column(nullable = false)
     private String naziv;
     //OneToMany List<Modul> moduli;
+
+
+
 }

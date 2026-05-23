@@ -22,4 +22,11 @@ public class Modul {
     @ManyToOne(optional = false)
     @JoinColumn(name = "smer_id", nullable = false)
     private Smer smer;
+
+    public static Modul from(String naziv, Smer smer) {
+        Modul modul = new Modul();
+        modul.setNaziv(naziv);
+        modul.setSmer(smer);
+        return modul;
+    }
 }
